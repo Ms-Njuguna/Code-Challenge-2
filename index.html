@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the site responsive -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Ensures compatibility with Internet Explorer -->
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <title>My Personal Website</title>
+        <title>Event Guest List Manager</title>
+    </head>
+    <body>
+        <div id="pageHeader">
+            <h1>Who's Coming?</h1>
+            <p>Every great party starts with a great list. Add your guests one by one and we’ll help you keep track of the magic — RSVPs, and all.</p>
+        </div>
+        <form id="guestListRegistrationForm">
+            <h3 id="formTitle">Add to your guest list</h3>
+            <label for="name">Guest Name</label>
+            <input type="text" id="name" name="guestName" required>
+
+            <p>Guest Category</p>
+            <div class="radio-Options">
+                <label for="family"><input type="radio" id="family" name="familyCategory">Family</label>
+                <label for="friend"><input type="radio" id="friend" name="friendCategory">Friend</label>
+                <label for="colleague"><input type="radio" id="colleague" name="colleagueCategory">Colleague</label>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+        <script src="./src/index.js"></script>
+    </body>
+</html>
+
+
+<!--#355E3B-->
