@@ -4,7 +4,7 @@ Week 2 JavaScript Code Challenge
 
 ## Description
 
-This repository contains my solutions to the Week 2 JavaScript coding challenge. The challenge is organized into a folder with a dedicated `.js` file, '.html' file and '.css' file containing the solution code. The challenge tests working with forms, capturing user input, and updating the page dynamically using JavaScript — all without refreshing the browser. 
+This repository contains my solutions to the Week 2 JavaScript coding challenge. The challenge is organized into a folder with a dedicated `.js` file, `.html` file and `.css` file containing the solution code. The challenge tests working with forms, capturing user input, and updating the page dynamically using JavaScript — all without refreshing the browser. 
 
 
 ### Challenge:
