@@ -4,7 +4,7 @@ Week 2 JavaScript Code Challenge
 
 ## Description
 
-This repository contains my solutions to the Week 2 JavaScript coding challenge. The challenge is organized into its own folder with a dedicated `.js` file containing the solution code. The challenge tests working with forms, capturing user input, and updating the page dynamically using JavaScript — all without refreshing the browser. 
+This repository contains my solutions to the Week 2 JavaScript coding challenge. The challenge is organized into a folder with a dedicated `.js` file, '.html' file and '.css' file containing the solution code. The challenge tests working with forms, capturing user input, and updating the page dynamically using JavaScript — all without refreshing the browser. 
 
 
 ### Challenge:
@@ -17,7 +17,6 @@ This is a deliverable-driven challenge with the following deliverables:
 - A user should see the guest's name appear in a list on the page after they submit the form.
 - A user should be able to remove a guest from the list using a delete button.
 - Add a "Remove" button for each guest.
-- Limit the guest list to 10 people — alert the user if they exceed the limit.
 - Limit the guest list to 10 people — alert the user if they exceed the limit.
 - Allow guests to be categorized as Friend, Family, or Colleague, with color tags.
 - Display the time when each guest was added.
