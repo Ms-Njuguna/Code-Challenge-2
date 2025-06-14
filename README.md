@@ -13,15 +13,16 @@ This repository contains my solutions to the Week 2 JavaScript coding challenge.
 
 This is a deliverable-driven challenge with the following deliverables: 
 - A user should be able to type a guest's name into the input field.
-- A user should be able to click a submit button to add the guest.
-- A user should see the guest's name appear in a list on the page after they submit the form.
-- A user should be able to remove a guest from the list using a delete button.
-- Add a "Remove" button for each guest.
-- Limit the guest list to 10 people — alert the user if they exceed the limit.
-- Allow guests to be categorized as Friend, Family, or Colleague, with color tags.
-- Display the time when each guest was added.
+- A user should be able to click a submit button to add the guest. 
+- A user should see the guest's name appear in a list on the page after they submit the form. 
+- A user should be able to remove a guest from the list using a delete button. 
+- Add a "Remove" button for each guest. 
+- Limit the guest list to 10 people — alert the user if they exceed the limit. 
+- Add a "Toggle RSVP" feature — guests can be marked as “Attending” or “Not Attending”
+- Allow guests to be categorized as Friend, Family, or Colleague, with color tags. 
+- Display the time when each guest was added. 
 - Add an Edit button that allows updating a guest's name.
-- My own custom feature: **Celebrate When Guest Limit is Reached**
+- My own custom feature: **Have the list of guests in a table that only appears if there is an input** 
 
 ---
 

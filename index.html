@@ -18,7 +18,7 @@
             <p>Every great party starts with a great list. Add your guests one by one and we’ll help you keep track of the magic — RSVPs, and all.</p>
         </div>
         <div class="form-container">
-            <form id="guestListRegistrationForm">
+            <form class="guestListRegistrationForm">
                <h3 id="formTitle">Add to your guest list</h3>
                <label for="name">Guest Name</label>
                <input type="text" id="name" name="guestName" required>
@@ -30,13 +30,12 @@
                    <label for="colleague"><input type="radio" id="colleague" name="guestCategory">Colleague</label>
                </div>
 
-               <button id="submitBtn"  type="submit">Submit</button>
+               <button onsubmit="buildGuestList()" id="submitBtn"  type="submit">Submit</button>
            </form>
         </div>
+        <div id="guestListContainer"></div>
         
         <script src="./src/index.js"></script>
     </body>
 </html>
 
-
-<!--#355E3B-->
