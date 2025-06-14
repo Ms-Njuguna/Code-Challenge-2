@@ -176,10 +176,6 @@ body {
   background-color: #2196F3;
 }
 
-.unspecified {
-  background-color: violet;
-}
-
 /* Buttons styling */
 .editBtn {
   border: none;
@@ -190,6 +186,14 @@ body {
   fill: #355E3B;
 }
 
+.saveBtn {
+  border-color: #355E3B;
+  border-radius: 15px;
+  padding: 2px 8px;
+  background-color: white;
+  margin-left: 10px;
+}
+
 .deleteButton {
   border-color: #355E3B;
   border-radius: 15px;
@@ -198,7 +202,44 @@ body {
 }
 
 .toggleButton {
-  background-color: bisque;
+  position: relative;
+  background-color: white;
+  border-radius: 21px;
+  width: 40px;
+  height: 19.5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 8px;
+  border: 2px solid #355E3B;
+  box-sizing: border-box;
+}
+
+.toggleButton::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  bottom: 1px;
+  left: 0;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #355E3B;
+  transition: left 0.3s ease;
+}
+
+.toggleButton.attending::before {
+  left: 21px;
+  background-color: #355E3B;
+}
+
+.toggleTitle {
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  vertical-align: middle;
+  margin-left: 15px;
 }
 
 
