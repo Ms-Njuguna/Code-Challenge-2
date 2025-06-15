@@ -80,7 +80,7 @@ function buildGuestList(guestName, category) {
     //adding the time each guest was added
     let time = document.createElement('td')
     time.textContent = new Date().toLocaleTimeString()
-    console.log(`The time feature is working ${time.textContent}`)
+    //console.log(`The time feature is working. New Guest added at ${time.textContent}`)
 
     //adding the toggle RSVP feature
     let toggleTd = document.createElement('td')
@@ -97,7 +97,7 @@ function buildGuestList(guestName, category) {
     toggleTd.appendChild(toggleTitle)
 
     toggleBtn.addEventListener('click', () => {
-        console.log('Toggle is working great so far')
+        //console.log('Toggle is working great so far')
         
         const isAttending = toggleBtn.getAttribute('data-status') === 'Attending';
 
@@ -111,7 +111,7 @@ function buildGuestList(guestName, category) {
           toggleTitle.textContent = 'Attending';
         }
 
-        console.log(`The current status is ${toggleTitle.textContent}`)
+        console.log(`The current RSVP status for ${guestName} is ${toggleTitle.textContent}`)
     })
 
     //adding the delete button
@@ -126,10 +126,12 @@ function buildGuestList(guestName, category) {
     //bringing it all together
     tr.append(nameTd, categoryTd, time, toggleTd, deleteAction);
     tBody.append(tr);
-
+    console.log(`Yaaaaaay!!! A new guest has been added to the list - name: ${guestName}, category: ${category}, at: ${time.textContent}`)
 }
 
 function handleDelete(e) {
+    console.log('You have deleted a guest from your list.')
+
     const row = e.target.closest('tr');
     const tbody = row.parentElement;
     const table = tbody.parentElement;
@@ -144,9 +146,9 @@ function handleDelete(e) {
 }
 
 function handleEdit(e) {
-    console.log('Hi Trish, you are trying to edit a guest name')
+    console.log('Hi Trish, you are editing a guest name')
 
-    //checks for the specific row data we are targeting- the guest name
+    //checks for the specific row data we are targeting so that we can target the guest name we want to edit
     const rowData = e.target.closest('tr');
     console.log(rowData);
 
@@ -161,7 +163,7 @@ function handleEdit(e) {
     const input = document.createElement('input');
     input.value = currentName;
     input.type = 'text';
-    console.log(`The current name is ${currentName}`)
+    console.log(`The original name is ${currentName}`)
 
     //I added a save button to to allow the user to save their changes to the guest name
     const saveBtn = document.createElement('button');
@@ -179,7 +181,7 @@ function handleEdit(e) {
             rowElement.textContent = '';
             const nameSpan = document.createElement('span');
             nameSpan.textContent = updatedName;
-            console.log(`The updated name is ${updatedName}`)
+            console.log(`You have updated the guest name to: ${updatedName}`)
 
             let editBtn = document.createElement('button')
             editBtn.className = 'editBtn';
